@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="./assets/images/png/logo.png" alt="" class="logo" width="40">
+                <ul>
+                    <li class="item-collapse"><a class="active" href="index.html">Home</a></li>
+                    <li class="item-collapse"><a href="blog.html">My Project</a></li>
+                    <li class="item-collapse"><a href="testimonial.html">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact me</a>
+            </div>
+            <div class="nav-right" id="barsmenu">
+                <button style="border: none; cursor: pointer; background: none;" onclick="openHamburger()">
+                    <img src="./assets/images/svg/menu-fill.svg" alt="" width="25px" >
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html" class="hamburger-active">Home</a>
+        <a href="blog.html">My Project</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a class="button-contact-hamburger" href="contact.html">
+            <button>Contact</button> 
+        </a>
+    </div>
+
+    <section>
+        <div class="card">
+            <div class="desc">
+                <h2 class="title">Hi, Welcome to my Portfolio</h2>
+                <div class="detail-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi atque voluptas commodi fuga cum consectetur velit assumenda eum recusandae aliquam nisi debitis impedit, vitae iure quisquam placeat! Explicabo sint eligendi alias quos. Quaerat, qui porro, deleniti officiis omnis voluptates quae sit corrupti, nemo minima expedita! Suscipit architecto modi blanditiis dolorem aperiam animi, nesciunt voluptates magni! Saepe, consequatur suscipit nostrum a alias officiis animi, accusamus, ipsum placeat neque tenetur quibusdam!</div>
+                <div class="button-desc">
+                    <a class="card-button" href="contact.html">Contact</a> 
+                    <a href="" class="download">Download CV <img src="./assets/images/svg/download.svg" alt="" width="17"></a>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/i-gede-bagus-arya-negara-2a7516274"><img src="./assets//images/svg/linkedin.svg" alt=""></a>
+                    <a href="https://www.facebook.com/bagusarya.bagusarya.961?mibextid=ZbWKwL"><img src="./assets/images/svg/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/bagusaryaa_/"><img src="./assets/images/svg/instagram.svg" alt=""></a>
+                    <a href="https://github.com/IGBagusAryaN"><img src="./assets/images/svg/github.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="pict">
+                <img class="profile-pict" src="./assets/images/png/luffy.jpg" alt="" >
+                <div class="desc-pict">
+                    <div class="title-pict">Bagus Arya</div>
+                    <div class="job-pict">Fullstack Developer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

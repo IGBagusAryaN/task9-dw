@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="./assets/images/png/logo.png" alt="" class="logo" width="40">
+                <ul>
+                    <li class="item-collapse"><a href="index.html">Home</a></li>
+                    <li class="item-collapse"><a class="active" href="blog.html">My Project</a></li>
+                    <li class="item-collapse"><a href="testimonial.html">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact me</a>
+            </div>
+            <div class="nav-right" id="barsmenu">
+                <button style="border: none; cursor: pointer; background: none;" onclick="openHamburger()">
+                    <img src="./assets/images/svg/menu-fill.svg" alt="" width="25px" >
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="blog.html" class="hamburger-active">My Project</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a class="button-contact-hamburger" href="contact.html">
+            <button>Contact</button> 
+        </a>
+      </div>
+    
+    <div>
+        <div class="container-form-blog">
+            <div class="form-blog">
+                <form onsubmit="addBlog(event)">
+                    <h1>Add my Project</h1>
+                    <div class="input-blog">
+                        <label for="input-blog-title">Project Name</label>
+                        <input type="text" id="input-blog-title" placeholder="E-Commerce Web..." required>
+                    </div>
+                    <div class="input-date">
+                        <div>
+                            <label for="input-start-date">Start Date</label>
+                            <input type="date" id="input-start-date" required>
+                        </div>
+                        <div>
+                            <label for="input-end-date">End Date</label>
+                            <input type="date" id="input-end-date" required>
+                        </div>
+                    </div>
+                    <div class="input-desc">
+                        <label for="input-blog-desc">Deskripsi</label>
+                        <textarea name="" id="input-blog-desc" cols="30" rows="7" placeholder="Describe your project..." required></textarea>
+                    </div>
+                    <div class="input-checkbox">
+                        <Label>Technologies</Label>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" name="option1" value="Next JS" id="input-checkbox-html">
+                                <label for="input-checkbox-html">HTML</label>
+                                
+                                <input type="checkbox" name="option2" value="React JS" id="input-checkbox-css">
+                                <label for="input-checkbox-css">CSS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option3" value="Node JS" id="input-checkbox-rjs">
+                                <label for="input-checkbox-rjs">React JS</label>
+                                
+                                <input type="checkbox" name="option4" value="TypeScript" id="input-checkbox-js">
+                                <label for="input-checkbox-js">JavaScript</label>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="upload-container">
+                        <input type="file" id="image-upload" class="file-input">
+                        <label for="image-upload" class="file-label">
+                            <span class="choose-text">Choose image</span>
+                            <img src="./assets/images/svg/attachment.svg" alt="">
+                        </label>
+                    </div>
+                    <div class="button">
+                        <button type="submit" onclick="formSubmit()">Post Blog</button>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-project">
+        <h1>My Project</h1>
+        <div class="container-project" id="contents">
+            <div class="card-project">
+                <div class="img-project">
+                    <img src="./assets/images/png/game-web.png" alt="" >
+                </div>
+                <a  href="./blog-detail/blog-detail1.html" class="title-project">Game Store Web</a>
+                <div class="duration-project">Duration : 1 bulan, 7 hari</div>
+                <div class="post-time-project">2 day ago - 23 May 2023 22:42 WITA</div>
+                <div class="mini-desc-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero quia id quae sapiente maxime.</div>
+                <div class="tech-project">
+                    <img src="./assets/images/svg/html5.svg" alt="">
+                    <img src="./assets/images/svg/css3.svg" alt="">
+                    <img src="./assets/images/svg/javascript.svg" alt="">
+                </div>
+                <div class="button-project">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="card-project">
+                <div class="img-project">
+                    <img src="./assets/images/png/portf.png" alt="" >
+                </div>
+                <a href="./blog-detail/blog-detail2.html" class="title-project">Portofolio Design Web</a>
+                <div class="duration-project">Duration : 1 Bulan, 3 Hari</div>
+                <div class="post-time-project">2 day ago - 23 May 2023 22:42 WITA</div>
+                <div class="mini-desc-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero quia id quae sapiente maxime.</div>
+                <div class="tech-project">
+                    <img src="./assets/images/svg/html5.svg" alt="">
+                    <img src="./assets/images/svg/css3.svg" alt="">
+                    <img src="./assets/images/svg/javascript.svg" alt="">
+                </div>
+                <div class="button-project">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="card-project">
+                <div class="img-project">
+                    <img src="./assets/images/png/nft.png" alt="" >
+                </div>
+                <a href="./blog-detail/blog-detail3.html" class="title-project">NFT Web</a>
+                <div class="duration-project">Duration : 1 bulan, 4 Hari</div>
+                <div class="post-time-project">2 day ago - 23 May 2023 22:42 WITA</div>
+                <div class="mini-desc-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero quia id quae sapiente maxime.</div>
+                <div class="tech-project">
+                    <img src="./assets/images/svg/html5.svg" alt="">
+                    <img src="./assets/images/svg/css3.svg" alt="">
+                    <img src="./assets/images/svg/javascript.svg" alt="">
+                </div>
+                <div class="button-project">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="card-project">
+                <div class="img-project">
+                    <img src="./assets/images/png/nft.png" alt="" >
+                </div>
+                <a href="./blog-detail/blog-detail3.html" class="title-project">NFT Web</a>
+                <div class="duration-project">Duration : 1 bulan, 4 Hari</div>
+                <div class="post-time-project">2 day ago - 23 May 2023 22:42 WITA</div>
+                <div class="mini-desc-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero quia id quae sapiente maxime.</div>
+                <div class="tech-project">
+                    <img src="./assets/images/svg/html5.svg" alt="">
+                    <img src="./assets/images/svg/css3.svg" alt="">
+                    <img src="./assets/images/svg/javascript.svg" alt="">
+                </div>
+                <div class="button-project">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="card-project">
+                <div class="img-project">
+                    <img src="./assets/images/png/portf.png" alt="" >
+                </div>
+                <a href="./blog-detail/blog-detail2.html" class="title-project">Portofolio Design Web</a>
+                <div class="duration-project">Duration : 1 Bulan, 3 Hari</div>
+                <div class="post-time-project">2 day ago - 23 May 2023 22:42 WITA</div>
+                <div class="mini-desc-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero quia id quae sapiente maxime.</div>
+                <div class="tech-project">
+                    <img src="./assets/images/svg/html5.svg" alt="">
+                    <img src="./assets/images/svg/css3.svg" alt="">
+                    <img src="./assets/images/svg/javascript.svg" alt="">
+                </div>
+                <div class="button-project">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="card-project">
+                <div class="img-project">
+                    <img src="./assets/images/png/game-web.png" alt="" >
+                </div>
+                <a  href="./blog-detail/blog-detail1.html" class="title-project">Game Store Web</a>
+                <div class="duration-project">Duration : 1 bulan, 7 hari</div>
+                <div class="post-time-project">2 day ago - 23 May 2023 22:42 WITA</div>
+                <div class="mini-desc-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero quia id quae sapiente maxime.</div>
+                <div class="tech-project">
+                    <img src="./assets/images/svg/html5.svg" alt="">
+                    <img src="./assets/images/svg/css3.svg" alt="">
+                    <img src="./assets/images/svg/javascript.svg" alt="">
+                </div>
+                <div class="button-project">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

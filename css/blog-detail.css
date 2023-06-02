@@ -1,0 +1,91 @@
+.container-project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 80px;
+    padding: 30px 20px;
+}
+
+.container-project h2 {
+    margin-block: 30px;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.project .img-project{
+    width: 550px;
+}
+
+.mini-desc{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.duration{
+    margin-bottom: 30px;
+}
+
+.duration div{
+    margin-block: 10px;
+}
+
+.tech{
+    display: flex;
+    gap: 25px;
+    margin-block: 10px;
+}
+
+.desc-project{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.desc-project div{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+    .container-project{
+        width: 100%;
+        margin-left: 0;
+    }
+    .project{
+        flex-direction: column;
+        width: 100%;
+    }    
+
+    .project .img-project{
+        width: 100%;
+    }
+  }
+  
+@media only screen and (max-width: 550px) {
+    .container-project{
+        width: 100%;
+        margin-left: 0;
+    }
+    .project{
+        flex-direction: column;
+        width: 100%;
+    }    
+
+    .project .img-project{
+        width: 100%;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    .desc-project div{
+        font-size: 11px;
+    }
+  }
